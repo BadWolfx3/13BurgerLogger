@@ -10,16 +10,16 @@
                 <div class="form-group">
                     <label for="newburger">Order Fresh Burger</label>
                     {{!-- <input type="text" id="newburger" name="burger"> --}}
-                    <select data-placeholder="" id="newburger" name="burger">
-                        <option value="Nothing Selected" selected>Please Select a Sandwich</option>
+                    <input data-placeholder="" id="newburger" name="burger">
+                        {{!-- <option value="Nothing Selected" selected>Please Select a Sandwich</option>
                         <option value="Hamburger">Hamburger</option>
                         <option value="CheeseBurger">CheeseBurger</option>
                         <option value="DoubleBfChz">Double Up (double meat and cheese)</option>
                         <option value="VeggieBurger">Veggie Burger</option>
                         <option value="PulledPork">Pulled Pork Sandwich</option>
                         <option value="ChichenClub">Chicken Club Sandwich</option>
-                        <option value="SteaknChz">Steak and Cheese Sandwich</option>
-                    </select>
+                        <option value="SteaknChz">Steak and Cheese Sandwich</option> --}}
+                    </input>
 
                     <button type="submit" class="btn btn-success" id="addburger">
                         <span class="fa fa-thumbs-up"></span>
@@ -42,7 +42,7 @@
 
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
                         <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><span class="fa fa-usd"></span></button>
+                            data-newDevoured="{{devour}}"><span>Devour</span></button>
                         <hr>
                         {{/unless}}
                         {{/each}}
